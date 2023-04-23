@@ -154,6 +154,11 @@ section button:hover {
   cursor: pointer;
 }
 
+section button a{
+  text-decoration: none;
+  color: var(--blanco);
+}
+
 .contenedorImagenes {
   display: flex;
   flex-direction: column;
