@@ -8,7 +8,8 @@ if (isset($_GET['nombre']) && isset($_GET['email']) && isset($_GET['mensaje'])) 
     $headers = "From: $email";
 
     if (mail($to, $subject, $body, $headers)) {
-        echo "Mensaje enviado correctamente.";
+        header("Location: index.html");
+        exit();
     } else {
         echo "Error al enviar el mensaje.";
     }
