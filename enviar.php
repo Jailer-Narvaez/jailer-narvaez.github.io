@@ -1,8 +1,7 @@
-<?php
-if (isset($_POST['nombre']) && isset($_POST['email']) && isset($_POST['mensaje'])) {
-	$name = $_POST['nombre'];
-	$email = $_POST['email'];
-	$message = $_POST['mensaje'];
+if (isset($_REQUEST['nombre']) && isset($_REQUEST['email']) && isset($_REQUEST['mensaje'])) {
+	$name = $_REQUEST['nombre'];
+	$email = $_REQUEST['email'];
+	$message = $_REQUEST['mensaje'];
 	$to = "jailernarvaez1999@gmail.com";
 	$subject = "Formulario de contacto";
 	$body = "Nombre: $name\nEmail: $email\nMensaje: $message";
@@ -14,4 +13,3 @@ if (isset($_POST['nombre']) && isset($_POST['email']) && isset($_POST['mensaje']
 		echo "Error al enviar el mensaje.";
 	}
 }
-?>

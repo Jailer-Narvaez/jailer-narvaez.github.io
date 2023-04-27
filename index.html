@@ -40,7 +40,7 @@
             <button><a href="./CV.pdf" target="_blank">Descargar CV</a></button>
         </div>
         <div class="contenedorImagenes">
-            <img class="programador" src="./img/foto.PNG" alt="programador">
+            <img class="programador" src="./img/programador.png" alt="programador">
             <div class="tecnologias">
                 <img src="./img/css-3.png" alt="css3">
                 <img class="html5" src="./img/html5.png" alt="html5">
@@ -66,13 +66,13 @@
 
     <section id="contacto">
         <h2>Contacto</h2>
-        <form action="enviar.php">
+        <form action="enviar.php" method="POST">
             <label for="nombre">Nombre:</label>
-            <input type="text" id="nombre" required>
+            <input type="text" id="nombre" name="nombre" required>
             <label for="email">Email:</label>
-            <input type="email" id="email" required>
+            <input type="email" id="email" name="email" required>
             <label for="mensaje">Mensaje:</label>
-            <textarea name="mensaje" id="mensaje" cols="30" rows="10"></textarea>
+            <textarea name="mensaje" id="mensaje" name="mensaje" cols="30" rows="10"></textarea>
             <button type="submit">Enviar</button>
         </form>
     </section>
