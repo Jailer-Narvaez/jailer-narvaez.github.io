@@ -242,11 +242,6 @@ section button a{
   transition: var(--transiciones);
 }
 
-
-
-
-
-
 .contenedorProyectos {
   display: flex;
   flex-flow: row wrap;
